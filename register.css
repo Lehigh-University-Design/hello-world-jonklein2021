@@ -1,5 +1,5 @@
 :root {
-    background-color: #130026;
+    background-image: linear-gradient(90deg, #001230, #001360);
     color: #f2f2f2;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
@@ -8,6 +8,10 @@
 h1 {
     font-size: 2rem;
     margin-bottom: 2rem;
+}
+
+p, label {
+    font-size: 0.75rem;
 }
 
 .container {
@@ -20,7 +24,7 @@ h1 {
     align-items: center;
     justify-content: center;
     width: 25vw;
-    background-color: #1f003d;
+    background-color: #001230;
     padding: 2rem;
     border-radius: 1rem;
 }
@@ -31,13 +35,19 @@ a {
     font-weight: bold;
 }
 
-input {
+input[type="text"], input[type="password"] {
     width: 65%;
     margin-bottom: 1rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    border: solid 1px #f2f2f2;
-    background-color: #1f003d;
+    color: #f2f2f2;
+    border: solid 1.5px #b0b0b0;
+    background-color: #001360;
+}
+
+input::placeholder {
+    color: #f2f2f2;
+    font-family: 'Trebuchet MS';
 }
 
 button {
@@ -45,15 +55,17 @@ button {
     background-color: #f2f2f2;
     border: none;
     border-radius: 0.5rem;
-    color: #1f003d;
+    color: #001360;
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-family: 'Trebuchet MS';
+    font-weight: bolder;
     transition: background-color 0.3s, color 0.3s;
 }
 
 button:hover {
-    background-color: #130026;
+    font-family: 'Trebuchet MS';
+    background-color: #001360;
     color: #f2f2f2;
 }
