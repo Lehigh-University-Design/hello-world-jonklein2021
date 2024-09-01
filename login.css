@@ -25,6 +25,7 @@ p, label {
     justify-content: center;
     width: 25vw;
     background-color: #130026;
+    box-shadow: 0 0 10px 5px #4c0056;
     padding: 2rem;
     border-radius: 1rem;
 }

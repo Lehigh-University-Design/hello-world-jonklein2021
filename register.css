@@ -26,6 +26,7 @@ p, label {
     width: 25vw;
     background-color: #001230;
     padding: 2rem;
+    box-shadow: 0 0 10px 5px #001360;
     border-radius: 1rem;
 }
 
