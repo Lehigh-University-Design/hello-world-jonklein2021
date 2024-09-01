@@ -1,6 +1,9 @@
 :root {
-    background-image: linear-gradient(90deg, #001230, #001360);
-    color: #f2f2f2;
+    --white: #f2f2f2;
+    --darker: #000c21;
+    --lighter: #001360;
+    background-image: linear-gradient(90deg, var(--darker), var(--lighter));
+    color: var(--white);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
 }
@@ -24,14 +27,14 @@ p, label {
     align-items: center;
     justify-content: center;
     width: 25vw;
-    background-color: #001230;
+    background-color: var(--darker);
     padding: 2rem;
-    box-shadow: 0 0 10px 5px #001360;
+    box-shadow: 0 0 10px 5px var(--lighter);
     border-radius: 1rem;
 }
 
 a {
-    color: #f2f2f2;
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
 }
@@ -42,21 +45,21 @@ input[type="text"], input[type="password"] {
     padding: 0.5rem;
     border-radius: 0.5rem;
     color: #f2f2f2;
-    border: solid 1.5px #b0b0b0;
-    background-color: #001360;
+    border: solid 1.5px var(--lighter);
+    background-color: var(--darker);
 }
 
 input::placeholder {
-    color: #f2f2f2;
+    color: var(--white);
     font-family: 'Trebuchet MS';
 }
 
 button {
     width: 75%;
-    background-color: #f2f2f2;
+    background-color: var(--white);
     border: none;
     border-radius: 0.5rem;
-    color: #001360;
+    color: var(--lighter);
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -67,6 +70,6 @@ button {
 
 button:hover {
     font-family: 'Trebuchet MS';
-    background-color: #001360;
-    color: #f2f2f2;
+    background-color: var(--lighter);
+    color: var(--white);
 }
